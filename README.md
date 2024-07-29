@@ -1,8 +1,8 @@
-# 🎈 Blank app template
+# 📊 UK Tech Job Listings Insights Dashboard
 
-A simple Streamlit app template for you to modify!
+A dashboard showcasing some of the key insights gained from analysing UK tech job listings with NLP methods.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tech-jobs-dashboard.streamlit.app/)
 
 ### How to run it on your own machine
 
