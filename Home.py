@@ -1,8 +1,13 @@
 import streamlit as st
+import pandas as pd
+
+# # Load data as a session variable
+# if 'data' not in st.session_state:
+#     st.session_state.data = pd.read_csv('./data/test.csv')
 
 st.set_page_config(
     page_title='Dashboard - Home',
-    page_icon='📊'
+    page_icon='🏠'
 )
 
 st.sidebar.success('Please select a page from above.')
