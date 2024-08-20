@@ -4,6 +4,8 @@ import pandas as pd
 # # Load data as a session variable
 # if 'data' not in st.session_state:
 #     st.session_state.data = pd.read_csv('./data/test.csv')
+if 'ent_data' not in st.session_state:
+    st.session_state.ent_data = pd.read_csv('./data/entities.csv')
 
 st.set_page_config(
     page_title='Dashboard - Home',
