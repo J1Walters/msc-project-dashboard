@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-# # Load data as a session variable
-# if 'data' not in st.session_state:
-#     st.session_state.data = pd.read_csv('./data/test.csv')
+# Load data as a session variable
+if 'loc_data' not in st.session_state:
+    st.session_state.loc_data = pd.read_csv('./data/location.csv')
 if 'ent_data' not in st.session_state:
     st.session_state.ent_data = pd.read_csv('./data/entities.csv')
 
