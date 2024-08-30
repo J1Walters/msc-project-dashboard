@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+# Load in data
 loc_df = st.session_state.loc_data
 
 geo_df = loc_df.groupby('settlement').agg({'lat':'mean', 'long':'mean', 'settlement':'count'})
@@ -20,6 +21,8 @@ st.set_page_config(
     page_title='Dashboard - Locations',
     page_icon='📍'
 )
+
+st.sidebar.write('Data sourced from Gradcracker and Indeed.')
 
 st.markdown(
     '## Job Locations'
