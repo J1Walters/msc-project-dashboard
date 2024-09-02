@@ -30,9 +30,9 @@ st.set_page_config(
 )
 
 # Sidebar
-st.sidebar.write('Data sourced from Gradcracker and Indeed.')
 st.sidebar.write(f'Total number of requirement entities: {num_ents}')
 st.sidebar.write(f'Number of unique requirement entities: {num_uniq_ents}')
+st.sidebar.write('Data sourced from Gradcracker and Indeed.')
 
 st.markdown(
     '## Education/Requirements'

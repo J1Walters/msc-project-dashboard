@@ -47,11 +47,11 @@ st.set_page_config(
 )
 
 # Sidebar
-st.sidebar.write('Data sourced from Gradcracker and Indeed.')
 st.sidebar.write(f'Total number of hard skill entities: {num_h_ents}')
 st.sidebar.write(f'Number of unique hard skill entities: {num_uniq_h_ents}')
 st.sidebar.write(f'Total number of soft skill entities: {num_s_ents}')
 st.sidebar.write(f'Number of unique soft skill entities: {num_uniq_s_ents}')
+st.sidebar.write('Data sourced from Gradcracker and Indeed.')
 
 st.markdown(
     '## Hard and Soft Skills'

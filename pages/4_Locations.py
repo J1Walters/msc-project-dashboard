@@ -10,6 +10,9 @@ loc_counts = loc_df['settlement'].value_counts()
 loc_props = loc_df['settlement'].value_counts(normalize=True)
 loc_count_props = pd.concat([loc_counts, loc_props], axis=1)
 
+# Get number of unique locations
+num_uniq_locs = loc_count_props.shape[0]
+
 # Get number of jobs in multiple locations and remote jobs
 num_multi = loc_df.loc[loc_df['location'] == 'Multiple Locations'].shape[0]
 num_remote = loc_df.loc[loc_df['location'] == 'Remote'].shape[0]
@@ -23,7 +26,7 @@ states_df = loc_df['state'].value_counts()
 
 # Create map figure
 map_fig = px.density_mapbox(geo_df, lat='lat', lon='long', z='num_jobs', opacity=0.9, radius=30,
-                        hover_name=geo_df.index, zoom=4.8, mapbox_style='open-street-map',
+                        hover_name=geo_df.index, zoom=4.8, mapbox_style='open-street-map', center=dict(lat=54, lon=-2.5),
                         labels={
                             'lat':'Latitude',
                             'long':'Longitude',
@@ -41,6 +44,7 @@ st.set_page_config(
 )
 
 # Sidebar
+st.sidebar.write(f'Number of unique locations: {num_uniq_locs}')
 st.sidebar.write('Data sourced from Gradcracker and Indeed.')
 
 st.markdown(
