@@ -72,7 +72,7 @@ def create_plot(df, time, skill, date):
     fig = px.bar(df, x='new_ent', y='perc_change', color='status',
                  labels={
                      'perc_change':f'Change From Previous {time} (%)',
-                     'new_ent':f'{skill}<>{date}',
+                     'new_ent':f'{skill}<br>{date}',
                      'status':'Status'
         }
     )
