@@ -17,11 +17,25 @@ st.set_page_config(
     page_icon='🏠'
 )
 
+# Sidebar
 st.sidebar.success('Please select a page from above.')
-st.sidebar.write('Data sourced from Gradcracker and Indeed.')
 st.sidebar.write(f'Total number of jobs: {num_jobs}')
+st.sidebar.write('Data sourced from Gradcracker and Indeed.')
 
-st.title('Analysing the UK Tech Job Market Using Natural Language Processing')
+st.title('📊 Analysing the UK Tech Job Market Using Natural Language Processing')
 st.markdown(
-    'Welcome to the job insights dashboard. Please select a page from the sidebar.'
+    'Welcome to the job insights dashboard.'
+)
+st.markdown(
+    '''
+    The dashboard consists of the following pages, which are all accessible from the side bar on the left hand side:
+    - Technologies, Languages and Frameworks
+    - Hard and Soft Skills
+    - Education
+    - Locations
+    - Trends
+    
+    The side bar can be accessed on mobile via the arrow in the top left corner.
+    Please note that display issues may occur on mobile devices.
+    '''
 )
