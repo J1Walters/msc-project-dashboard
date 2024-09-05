@@ -29,7 +29,7 @@ h_skill_fig = px.bar(h_skill_props.head(20), x='proportion', text_auto=True,
                  'proportion':'Proportion'
              }
 )
-h_skill_fig.update_layout(xaxis={'tickformat':'.2%'}, yaxis={'categoryorder':'total ascending'}, height=800)
+h_skill_fig.update_layout(xaxis={'tickformat':'.2%'}, yaxis={'categoryorder':'total ascending'}, height=800, dragmode=False)
 
 # Get counts and proportions for each unique entity
 s_skill_counts = ent_df.loc[ent_df['type'] == 'S_SKILL', 'new_ent'].value_counts()
@@ -45,7 +45,7 @@ s_skill_fig = px.bar(s_skill_props.head(20), x='proportion', text_auto=True,
                  'proportion':'Proportion'
              }
 )
-s_skill_fig.update_layout(xaxis={'tickformat':'.2%'}, yaxis={'categoryorder':'total ascending'}, height=800)
+s_skill_fig.update_layout(xaxis={'tickformat':'.2%'}, yaxis={'categoryorder':'total ascending'}, height=800, dragmode=False)
 
 st.set_page_config(
     page_title='Dashboard - Skills',

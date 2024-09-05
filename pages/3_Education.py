@@ -28,7 +28,7 @@ fig = px.bar(skill_props.head(20), x='proportion', text_auto=True,
                  'proportion':'Proportion'
              }
 )
-fig.update_layout(xaxis={'tickformat':'.2%'}, yaxis={'categoryorder':'total ascending'}, height=800)
+fig.update_layout(xaxis={'tickformat':'.2%'}, yaxis={'categoryorder':'total ascending'}, height=800, dragmode=False)
 
 st.set_page_config(
     page_title='Dashboard - Education',
