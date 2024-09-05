@@ -61,7 +61,7 @@ st.markdown(
 
 # Plot map
 st.plotly_chart(
-    map_fig
+    map_fig, use_container_width=True
 )
 
 # Display number of jobs in multiple locations and remote
