@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly.io as pio
+
+pio.templates.default = 'plotly'
 
 # Load data as a session variable
 if 'ent_data' not in st.session_state:

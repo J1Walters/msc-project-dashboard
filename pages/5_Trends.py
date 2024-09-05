@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 from trend_functions.functions import date_list, skill_map, get_plot_df, create_plot
+import plotly.io as pio
+
+pio.templates.default = 'plotly'
 
 # Load data
 year_df = pd.read_csv('./data/yearly_trend.csv')
