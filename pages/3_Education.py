@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+# Load data as a session variable
+if 'ent_data' not in st.session_state:
+    st.session_state.ent_data = pd.read_csv('./data/multihash_maxout_vec_ents_clean.csv')
+
 # Load in data
 ent_df = st.session_state.ent_data
 # Get total number of entities

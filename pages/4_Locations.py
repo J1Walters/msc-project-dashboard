@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+# Load data as a session variable
+if 'loc_data' not in st.session_state:
+    st.session_state.loc_data = pd.read_csv('./data/location.csv')
+
 # Load in data
 loc_df = st.session_state.loc_data
 
@@ -57,7 +61,7 @@ st.markdown(
 
 # Plot map
 st.plotly_chart(
-    map_fig, use_container_width=True
+    map_fig
 )
 
 # Display number of jobs in multiple locations and remote
