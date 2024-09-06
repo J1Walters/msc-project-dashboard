@@ -35,7 +35,7 @@ st.markdown(
     - Locations
     - Trends
     
-    The side bar can be accessed on mobile via the arrow in the top left corner.
-    Please note that display issues may occur on mobile devices.
+    The side bar also contains some extra information about the data used in this dashboard and can be accessed on
+    mobile via the arrow in the top left corner. Please note that display issues may occur on mobile devices.
     '''
 )
